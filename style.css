@@ -1,77 +1,162 @@
+/* Retro Windows Theme for Bookworm.in */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'VT323', monospace;
+    background-color: #fff;
+    color: #000080;
     margin: 0;
     padding: 0;
+    text-align: center;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 128, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 128, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
+/* 🔵 Header and Navigation 🔵 */
 header {
-    background-color: #333;
-    color: #fff;
+    background: #000080;
     padding: 20px 0;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px #000;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    background: #000080;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
-.lucknow {
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 100px 0;
+nav ul li a:hover {
+    background: #ffffff;
+    color: #000080;
+    border: 2px solid #000080;
+}
+
+/* 🔍 Search Page Styling 🔍 */
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #000080;
+    background: #ffffff;
+    color: #000080;
     text-align: center;
+    border-radius: 3px;
 }
 
-.lucknow h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.lucknow p {
-    font-size: 1.25rem;
-    margin-bottom: 40px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #ff4500; 
-    color: #fff;
+.search-bar button {
     padding: 10px 20px;
+    font-size: 16px;
+    background: #000080;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background: #ffffff;
+    color: #000080;
+    border: 2px solid #000080;
+}
+
+/* 📚 Books Page Styling 📚 */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.book {
+    background: #f0f0f0;
+    padding: 15px;
     border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #cc3700; 
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    border: 2px solid #000080;
+    transition: transform 0.3s;
+    width: 250px;
     text-align: center;
 }
 
-footer p {
-    font-size: 0.9rem;
+.book:hover {
+    transform: scale(1.05);
+    border: 2px solid #000080;
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid #000080;
+    border-radius: 3px;
+}
+
+/* 📩 Contact Page Styling 📩 */
+.contact-us input,
+.contact-us textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #000080;
+    background: #ffffff;
+    color: #000080;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    margin: 10px auto;
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #000080;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-us button:hover {
+    background: #ffffff;
+    color: #000080;
+    border: 2px solid #000080;
+}
+
+/* 🎨 Footer Styling 🎨 */
+footer {
+    background: #000080;
+    padding: 20px 0;
+    margin-top: 20px;
+    color: #ffffff;
+    border-top: 2px solid #ffffff;
 }
